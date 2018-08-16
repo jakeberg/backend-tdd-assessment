@@ -40,7 +40,7 @@ class TestEcho(unittest.TestCase):
             ["python", "./echo.py", "-tul", "heLLo!"],
             stdout=subprocess.PIPE)
         stdout, _ = process.communicate()
-        self.assertEquals(stdout, "heLLo!\n")
+        self.assertEquals(stdout, "Hello!\n")
     
     def test_some(self):
         '''Tests what happens after if some arguments are passed'''
